@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+android:orientation="vertical"
+   >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="45dip"
+android:orientation="horizontal"
+    android:background="@color/bg_interest"
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:text="@string/Cancel"
+    android:textAllCaps="false"
+    android:textSize="12dip"
+    android:textColor="@color/btn_login_bg"
+    android:background="@color/bg_interest"
+    android:layout_weight="0.2"
+    android:gravity="left"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dip"
+    android:layout_marginLeft="10dip"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/editprofile"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_weight="0.6"
+        android:layout_gravity="center"
+        android:id="@+id/edittitle"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/Done"
+        android:textAllCaps="false"
+        android:textSize="12dip"
+        android:textColor="@color/btn_login_bg"
+        android:background="@color/bg_interest"
+        android:layout_weight="0.2"
+        android:gravity="right"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dip"
+        android:layout_marginRight="10dip"
+        />
+</LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/editdp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="3dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/bg_interest"
+        android:lines="1"
+        android:hint="userid"
+        android:id="@+id/usernameedit"
+        />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/bg_interest"
+        android:lines="1"
+        android:id="@+id/password"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/bg_interest"
+        android:lines="1"
+        android:id="@+id/fullname"
+        android:hint="full name"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/bg_interest"
+        android:lines="1"
+        android:id="@+id/ageedit"
+        android:layout_gravity="center"
+        android:hint="birthday"
+        android:drawableRight="@drawable/birthday_arrow"
+
+        />
+
+
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/radio_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Male"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/checkboximage"
+            android:textColor="@color/bg_interest"
+            android:checked="true"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/bg_interest"
+            android:text="  Female"
+            android:textStyle="bold"
+            android:button="@drawable/checkboximage"
+            android:onClick="onRadioButtonClicked"/>
+
+    </RadioGroup>
+
+</LinearLayout>
+
+</LinearLayout>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="@color/greymid"
+    android:text="@string/intro"
+    android:paddingLeft="10dp"
+    android:textStyle="bold"
+    android:gravity="center_vertical"
+    android:fontFamily="serif"
+    android:textColor="@color/black"
+    android:drawableLeft="@drawable/bio"
+    />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/bg_interest"
+        android:lines="1"
+        android:id="@+id/uintro"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/greymid"
+        android:text="@string/contact"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:fontFamily="serif"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/contact"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:id="@+id/phnlist"
+        android:nestedScrollingEnabled="true"
+        android:fastScrollEnabled="true"
+        >
+
+    </ListView>
+
+    <com.getmate.getmate.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:hint="@string/phone"
+        android:textColorHint="@color/bg_interest"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="2dp"
+android:lines="1"
+        android:gravity="center_vertical"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/add"
+        android:id="@+id/edittextphone"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:id="@+id/emaillist"
+        android:nestedScrollingEnabled="true"
+        android:fastScrollEnabled="true"
+        >
+
+    </ListView>
+    <com.getmate.getmate.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:hint="@string/email"
+        android:textColorHint="@color/bg_interest"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="2dp"
+android:lines="1"
+        android:gravity="center_vertical"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/add"
+        android:id="@+id/edittextemail"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/greymid"
+        android:text="@string/edu"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:fontFamily="serif"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/educ"
+
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:id="@+id/schllist"
+        android:nestedScrollingEnabled="true"
+        android:fastScrollEnabled="true"
+        >
+
+    </ListView>
+    <com.getmate.getmate.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:hint="@string/school"
+        android:textColorHint="@color/bg_interest"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="2dp"
+android:lines="1"
+        android:gravity="center_vertical"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/add"
+        android:id="@+id/edittextschool"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:id="@+id/colglist"
+        android:nestedScrollingEnabled="true"
+        android:fastScrollEnabled="true"
+        >
+
+    </ListView>
+    <com.getmate.getmate.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:hint="@string/college"
+        android:textColorHint="@color/bg_interest"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="2dp"
+        android:gravity="center_vertical"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/add"
+        android:id="@+id/edittextcollege"
+        android:lines="1"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/greymid"
+        android:text="@string/work"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:fontFamily="serif"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/work"
+        />
+       <ListView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingLeft="10dp"
+           android:paddingTop="2dp"
+           android:id="@+id/worklist"
+           android:nestedScrollingEnabled="true"
+           android:fastScrollEnabled="true"
+           />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    >
+    <com.getmate.getmate.CustomEditText
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:hint="Position"
+        android:textAllCaps="false"
+        android:textColorHint="@color/bg_interest"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="2dp"
+        android:gravity="center_vertical"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/add"
+        android:id="@+id/edittextworkposition"
+        android:lines="1"
+        android:layout_weight="1"
+        />
+
+    <com.getmate.getmate.CustomEditText
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:hint="Company"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        android:textColorHint="@color/bg_interest"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="2dp"
+        android:gravity="center_vertical"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+
+        android:id="@+id/edittextworkplace"
+        android:lines="1"
+        />
+</LinearLayout>
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="30dp"
+           android:background="@color/greymid"
+           android:text="Interest"
+           android:paddingLeft="10dp"
+           android:layout_marginTop="10dp"
+           android:textStyle="bold"
+           android:gravity="center"
+           android:fontFamily="serif"
+           android:id="@+id/editinterestbutton"
+           android:textColor="@color/black"
+           android:drawableRight="@android:drawable/btn_dropdown"
+           />
+   </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

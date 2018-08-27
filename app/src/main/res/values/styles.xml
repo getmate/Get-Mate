@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorControlNormal">@color/bg_interest</item>
+    </style>
+    <style name="DefaultTheme" parent="Theme.AppCompat"></style>
+    <style name="WindowTitleBackground" >
+        <item name="android:background">@color/bg_login</item>
+    </style>
+</resources>

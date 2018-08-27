@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="parentHaveNochildView" type="id"/>
+    <item name="parentHaveChildView" type="id"/>
+    <item name="ChildView" type="id"/>
+</resources>

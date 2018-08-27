@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal"
+        android:background="@color/bg_interest"
+        android:id="@+id/titleinterest"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:text="@string/Cancel"
+            android:textAllCaps="false"
+            android:textSize="12dip"
+            android:textColor="@color/btn_login_bg"
+            android:background="@color/bg_interest"
+            android:layout_weight="0.2"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+            android:id="@+id/cancel_button"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/interest"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_weight="0.6"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:textAllCaps="false"
+            android:textSize="12dip"
+            android:textColor="@color/btn_login_bg"
+            android:background="@color/bg_interest"
+            android:layout_weight="0.2"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dip"
+            android:layout_marginRight="10dip"
+            android:id="@+id/donebutton"
+            />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/darkgreen"
+    android:id="@+id/searchlinear"
+    android:layout_below="@+id/titleinterest"
+    >
+    <com.getmate.getmate.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_margin="7dp"
+        android:background="@drawable/searchborder"
+        android:drawableRight="@mipmap/search2"
+        android:textColorHint="@color/orange"
+        android:textSize="18dp"
+        android:onClick="didTapButton"
+        android:cursorVisible="false"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/searchview"
+        android:textColor="@color/black"
+        android:singleLine="true"
+
+        ></com.getmate.getmate.CustomEditText>
+
+
+</LinearLayout>
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/expandableinterest"
+        android:background="@color/white"
+        android:layout_below="@+id/searchlinear"
+         ></ExpandableListView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/interestnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_interest"
+        app:itemBackground="@color/bg_interest"
+
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        />
+
+</RelativeLayout>

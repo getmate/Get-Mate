@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/darkgreen"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:layout_margin="5dp"
+        android:id="@+id/linv"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:background="@drawable/searchborder"
+        >
+
+        <fragment
+            android:id="@+id/mapview"
+            android:layout_width="match_parent"
+            android:layout_height="464dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            tools:layout="@layout/dummyfragment"
+            android:layout_weight="0.60"
+
+            />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_interest"
+    android:layout_weight="0.4"
+    android:weightSum="1"
+    android:orientation="vertical"
+    >
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="1dp"
+        android:id="@+id/rgmap"
+        android:visibility="gone"
+
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="@string/beginner"
+            android:id="@+id/beginnermap"
+            android:background="@drawable/rbt_selector"
+            android:textColor="@drawable/textradio"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="@string/intermediate"
+            android:id="@+id/intermediatemap"
+            android:background="@drawable/rbt_selector"
+            android:textColor="@drawable/textradio"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+
+
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:text="@string/expert"
+            android:id="@+id/expertmap"
+            android:background="@drawable/rbt_selector"
+            android:textColor="@drawable/textradio"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="1dp"
+        android:id="@+id/radiog"
+        android:layout_weight="0.5"
+        android:background="@color/bg_interest"
+
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/people"
+            android:id="@+id/people"
+
+            android:drawableTop="@drawable/peopleevent"
+           android:background="@drawable/peopleback"
+            android:button="@null"
+            android:textColor="@drawable/peopletext"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/events"
+            android:id="@+id/events"
+            android:drawableTop="@drawable/eventimage"
+            android:background="@drawable/peopleback"
+            android:textColor="@drawable/peopletext"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+
+
+            />
+
+    </RadioGroup>
+</LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

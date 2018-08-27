@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    >
+    <android.support.v7.widget.CardView
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="7dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="4dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:scaleType="fitXY"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:background="@drawable/cornerborderphoto"
+            android:elevation="4dp"
+            android:layout_margin="10dp"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="top|right"
+            android:gravity="top|right"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="10dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+
+                >
+
+                <TextView
+                    android:id="@+id/nameAgeTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily= "@font/merge_light"
+                    android:text="Honey Goyal"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/bg_interest"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/locationNameTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abc"
+                    android:text="22 km away"
+                    android:layout_marginTop="2dp"
+                    android:layout_below="@+id/nameAgeTxt"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12sp"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:id="@+id/biofm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/introicon"
+                    android:layout_below="@+id/locationNameTxt"
+                    android:textColor="@color/darkgrey"
+                    android:fontFamily= "@font/merge_light"
+                    android:text="Indori"
+                    android:textSize="12sp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical"
+                    />
+                <TextView
+                    android:id="@+id/schoolfm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:drawableLeft="@drawable/schoolidname"
+                    android:layout_below="@+id/biofm"
+                    android:textColor="@color/darkgrey"
+                    android:fontFamily= "@font/merge_light"
+                    android:text="CSPS, IIT Madras"
+                    android:textSize="12sp"
+                    android:gravity="center_vertical"
+
+                    />
+                <TextView
+                    android:id="@+id/workfm"
+                    android:layout_width="match_parent"
+                    android:layout_height= "wrap_content"
+
+                    android:drawableLeft="@drawable/workid"
+                    android:layout_below="@+id/schoolfm"
+                    android:textColor="@color/darkgrey"
+                    android:fontFamily= "@font/merge_light"
+                    android:text="Data Analyst at Goldman Sachs"
+                    android:textSize="12sp"
+                    android:gravity="center_vertical"
+
+                    android:layout_marginBottom="1dp"
+                    />
+                <ImageView
+                    android:id="@+id/callfm"
+                    android:layout_width="wrap_content"
+                    android:layout_height= "wrap_content"
+                    android:src="@drawable/call"
+                    android:layout_below="@+id/workfm"
+                    android:gravity="center_vertical"
+
+                    android:layout_marginBottom="1dp"
+                    />
+                <ImageView
+                    android:id="@+id/smsfm"
+                    android:layout_width="wrap_content"
+                    android:layout_height= "wrap_content"
+                    android:src="@drawable/sms"
+                    android:layout_toRightOf="@+id/callfm"
+                    android:layout_below="@+id/workfm"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="1dp"
+                    />
+                <ImageView
+                    android:id="@+id/emailfm"
+                    android:layout_width="wrap_content"
+                    android:layout_height= "wrap_content"
+                    android:src="@drawable/emailid"
+                    android:layout_toRightOf="@+id/smsfm"
+                    android:layout_below="@+id/workfm"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+
+                    />
+                <ImageView
+                    android:id="@+id/locationfm"
+                    android:layout_width="wrap_content"
+                    android:layout_height= "wrap_content"
+                    android:src="@drawable/locationfm"
+                    android:layout_toRightOf="@+id/emailfm"
+                    android:layout_below="@+id/workfm"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="1dp"
+                    />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Common Interest"
+            android:fontFamily="@font/abc"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:layout_marginTop="225dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/commoninterestlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_marginTop="236dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginTop="322dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Favorite Interest"
+            android:fontFamily="@font/abc"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:layout_marginTop="327dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/favinterestlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_marginTop="337dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            />
+    </android.support.v7.widget.CardView>
+</FrameLayout>
